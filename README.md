@@ -29,6 +29,22 @@ cd pdf_cleaner
 uv pip install -e .
 ```
 
+3. **For development** (includes task runner):
+```bash
+uv pip install -e ".[dev]"
+```
+
+---
+
+## 🧹 Development
+
+Clean build artifacts:
+```bash
+poe clean
+```
+
+This removes `dist/`, `__pycache__/`, and `*.egg-info/` while preserving `.venv/` and `uv.lock`.
+
 ---
 
 ## 🛠 Usage

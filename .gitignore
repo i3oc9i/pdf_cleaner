@@ -11,3 +11,6 @@ wheels/
 
 # PDF documents
 *.pdf
+
+# Claude Code local settings
+.claude/

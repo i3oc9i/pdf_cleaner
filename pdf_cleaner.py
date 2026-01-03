@@ -83,6 +83,10 @@ def main():
     parser.add_argument("-r", "--replace", help="Text to put in place of the removed text (e.g. '[REDACTED]')")
     parser.add_argument("--dry-run", action="store_true", help="Preview changes")
 
+    if len(sys.argv) == 1:
+        parser.print_help()
+        sys.exit(0)
+
     args = parser.parse_args()
 
     if not os.path.exists(args.file):

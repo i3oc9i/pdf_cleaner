@@ -29,7 +29,7 @@ dependencies = [
 Repository = "https://github.com/i3oc9i/pdf_cleaner"
 
 [project.scripts]
-pdf_cleaner = "pdf_cleaner:main"
+pdf-cleaner = "pdf_cleaner:main"
 
 [project.optional-dependencies]
 dev = ["poethepoet"]
